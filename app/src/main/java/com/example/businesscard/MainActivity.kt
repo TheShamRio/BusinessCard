@@ -78,5 +78,15 @@ fun BusinessCardApp() {
             fontWeight = FontWeight.Medium,
             modifier = Modifier.padding(bottom = 32.dp)
         )
+
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center,
+            modifier = Modifier.padding(top = 32.dp)
+        ) {
+            ContactInfoRow(icon = Icons.Default.Phone, contactText = "+7 939 734 10 20 ")
+            ContactInfoRow(icon = Icons.Default.Share, contactText = "@shama.khsn")
+            ContactInfoRow(icon = Icons.Default.Email, contactText = "xsham@inbox.ru")
+        }
     }
 }
