@@ -48,3 +48,35 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Composable
+fun BusinessCardApp() {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        Image(
+            painter = painterResource(R.drawable.screenshot_4), // Replace with your image resource
+            contentDescription = null,
+            modifier = Modifier.size(128.dp)
+        )
+
+
+        Text(
+            text = "Full Name",
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(top = 16.dp)
+        )
+
+
+        Text(
+            text = "Title",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.padding(bottom = 32.dp)
+        )
+    }
+}
