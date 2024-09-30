@@ -49,6 +49,29 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+@Composable
+fun ContactInfoRow(icon: ImageVector, contactText: String) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.Center,  // Центрирование содержимого внутри строки
+        modifier = Modifier
+            .fillMaxWidth()  // Контейнер строки занимает всю ширину экрана
+            .padding(8.dp)
+    ) {
+        Icon(
+            imageVector = icon,
+            contentDescription = null,
+            modifier = Modifier.size(24.dp)
+        )
+        Text(
+            text = contactText,
+            fontSize = 16.sp,
+            modifier = Modifier.padding(start = 16.dp)
+        )
+    }
+}
+
 @Composable
 fun BusinessCardApp() {
     Column(
