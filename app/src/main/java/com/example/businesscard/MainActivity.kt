@@ -90,3 +90,12 @@ fun BusinessCardApp() {
         }
     }
 }
+
+
+@Preview(showBackground = true)
+@Composable
+fun BusinessCardPreview() {
+    BusinessCardTheme {
+        BusinessCardApp()
+    }
+}
