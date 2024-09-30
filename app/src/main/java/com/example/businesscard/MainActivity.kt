@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    BusinessCardApp()
                 }
             }
         }
@@ -54,9 +54,9 @@ class MainActivity : ComponentActivity() {
 fun ContactInfoRow(icon: ImageVector, contactText: String) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.Center,  // Центрирование содержимого внутри строки
+        horizontalArrangement = Arrangement.Center,  //
         modifier = Modifier
-            .fillMaxWidth()  // Контейнер строки занимает всю ширину экрана
+            .fillMaxWidth()  //
             .padding(8.dp)
     ) {
         Icon(
