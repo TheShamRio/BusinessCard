@@ -65,15 +65,15 @@ fun BusinessCardApp() {
 
 
         Text(
-            text = "Full Name",
+            text = stringResource(R.string.full_name),
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(top = 16.dp)
         )
 
 
-        Text(
-            text = "Title",
+        Text (
+            text = stringResource(R.string.title),
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium,
             modifier = Modifier.padding(bottom = 32.dp)
